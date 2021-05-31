@@ -1,8 +1,12 @@
 
-echo "Please enter opencv version full name : (sample ==> 4.5.2) "
+echo "Please enter opencv version full code name : (sample ==> 4.5.2) "
 # echo -e '\e]8;;https://github.com/opencv/opencv/releases/\aView last version here\e]8;;\a'  
-firefox https://github.com/opencv/opencv/releases/
-
+echo "Open opencv github webpage in firefox?(y/n)"
+read ans
+if [ "$x" = "y" ]; then
+    firefox https://github.com/opencv/opencv/releases/ 
+fi
+echo "Please enter opencv version full code name : (sample ==> 4.5.2) "
 read version
 
 # Detect Debian users running the script with "sh" instead of bash
